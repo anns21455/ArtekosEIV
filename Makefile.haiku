@@ -7,7 +7,7 @@ LDFLAGS.STATIC = -Wl,-Bstatic
 LDFLAGS.DYNAMIC = -Wl,-Bdynamic
 
 NAME = GLEW
-WARN = -Wall -W
+
 POPT = -O2
 
 BIN.SUFFIX =
@@ -15,6 +15,6 @@ BIN.SUFFIX =
 LIB.SONAME = lib$(NAME).so.$(SO_MAJOR)
 LIB.DEVLNK = lib$(NAME).so
 LIB.SHARED = lib$(NAME).so.$(SO_VERSION)
-LIB.STATIC = lib$(NAME).a
+
 LDFLAGS.SO = -shared -Wl,-soname=$(LIB.SONAME)
 
